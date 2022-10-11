@@ -1,3 +1,4 @@
 prueba de crear archivo de manera local y subirlo a la rama 
 
 11/10/2022 - bajo bien
+11/10/2022 . subio bien
