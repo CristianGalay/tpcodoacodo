@@ -1,0 +1,197 @@
+*{margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior:smooth;
+
+}
+body{
+    margin: 0;
+    background-color: gainsboro;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+}
+
+h1{color:rgb(0, 21, 141);}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.5em;}
+
+header{
+    display: flex;
+    flex-direction: column;
+    min-height: 70px;
+    background-color:orange;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    align-items: center;
+    margin-right: 20px ;
+}
+
+header .turibera{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.35em;
+    }
+
+header .conteiner{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
+    color: black;}
+
+header a:hover{color:wheat;}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgba(180, 109, 16, 0.89);
+    }
+button:hover{
+    background-color:rgba(158, 122, 74, 0.76);
+}
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("img/bera.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+}
+#hero h1{
+    color: whitesmoke;
+    font-size: 3.5em;
+    text-align: center;
+
+}
+
+
+#historia{background-color: rgb(30,30,30);
+    color: whitesmoke;
+
+}
+#historia .conteiner{
+    text-align: center;
+    padding: 100px 0px;
+
+}
+#historia p{
+    display: none;
+}
+#historia h2{
+    margin-top: 0;
+    padding: 0px 0px 50px 0px;
+}
+#historia .cartas{
+    display: flex;
+    flex-direction: column;
+}
+#historia .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+.carta:first-child{
+    background-image:  linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url(img/hudson.jpg);
+
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(img/pereyra.jpg);
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(img/vicenzo.jpg);
+
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.582);
+
+}
+footer .conteiner{
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    }
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: white;  
+}
+ 
+@media (min-width: 800px){
+        header{
+        display: flex;
+        flex-direction: row;
+        }
+        nav {
+            padding: 10px 0px;
+        }
+
+        #lugares .cartas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            }
+        #lugares p{
+            display: block;
+            
+        }
+    }
