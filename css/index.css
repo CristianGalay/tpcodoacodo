@@ -192,7 +192,7 @@ footer p{
     color: white;  
 }
  
-@media (min-width: 800px){
+@media (min-width: 992px){
         header{
         display: flex;
         flex-direction: row;
@@ -211,3 +211,22 @@ footer p{
             
         }
     }
+@media (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row;        
+        }
+        nav {
+            padding: 10px 0px;
+        }
+
+        /* #lugares .cartas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            }
+        #lugares p{
+            display: block;
+            
+        } */
+}
