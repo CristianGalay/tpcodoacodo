@@ -81,13 +81,16 @@ button{
     color: white;
     background-color: rgba(180, 109, 16, 0.89);
     }
+
 button:hover{
     background-color:rgba(158, 122, 74, 0.76);
 }
+
 .conteiner{
     max-width: 1400px;
     margin: auto;
 }
+
 #hero{
     display: flex;
     align-items: center;
@@ -100,6 +103,7 @@ button:hover{
     background-size: cover;
     background-position: center center;
     height: 500px;
+    
 }
 #hero h1{
     color: whitesmoke;
