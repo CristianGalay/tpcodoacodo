@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/lugares.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/index.css">
+
     <title>Turismo Berazategui</title>
-    <style>
+
+<style>
         #hero {
             display: flex;
             align-items: center;
@@ -23,8 +36,8 @@
             background-position: center center;
             height: 300px;
         }
-       
     </style>
+
 
 </head>
 
@@ -36,11 +49,20 @@
                 <h1 class="truribera">Turismo Berazategui</h1>
             </div>
         </div>
+
+       <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+       
         <nav>
-            <a href="index.html ">Home</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="#lugares">Lugares</a>
-            <a href="#historia.html">Historia</a>
+            <ul>
+                <li><a href="index.html ">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="#lugares">Lugares</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
