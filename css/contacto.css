@@ -1,16 +1,14 @@
-@import url();
 *{margin: 0;
     box-sizing: border-box;
-
 }
+
 html{
     scroll-behavior:smooth;
-
 }
+
 body{
     margin: 0;
     background-color: gainsboro;
-    font-style: italic;
     font-family: 'Roboto', sans-serif;
     margin-top: 0px;
 }
@@ -27,11 +25,19 @@ header{
     display: flex;
     flex-direction: column;
     min-height: 70px;
-    background-color:#ffa500;
+    background-color:orange;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
 }
+
+header ul{
+    display: flex;
+    place-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+ }
 
 .logo{
     display: flex;
@@ -57,50 +63,17 @@ header .conteiner{
     align-items: center;
 }
 
-header a{
+header ul a{
     text-decoration: none;
     font-weight: bold;
     padding-right: 10px;
     color: black;}
 
-header a:hover{color:wheat;}
+header ul a:hover{color:wheat;}
 
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-}
-nav a:hover{
-    color:wheat;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-@media (max-width:700px){
-    header{
-        flex-direction: column;
-    }
-    nav {
-        padding: 10px 0px;
-    }
-}
-
-.contenedor{
-    display: grid;
-    /* grid-template-columns: 100px 100px 100px;     */
-    /* grid-template-columns: 50% 30% 20%; */
-    grid-template-columns: 2fr 6fr 2fr;
-    /* grid-template-rows: 100px 100px 100px; */
-    gap: 10px;
-    align-items: start;
-
-}
-.box {
-    background-color: wheat;
-    padding: 10px;
-    color: black;
-    text-align: center;
-    border-style:groove;
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
 }
 
 form {
@@ -108,13 +81,11 @@ form {
     background-size: 25%;
     }
 
-
 footer{
     background-color: rgba(0, 0, 0, 0.582);
-}    
 
+}
 footer .conteiner{
-
     height: 50px;
     display: flex;
     justify-content: center;
@@ -126,3 +97,109 @@ footer p{
     padding: 12px;
     color: white;  
 }
+    #menu-check{
+        display: none;
+    }
+
+@media (min-width: 992px){
+        header{
+        display: flex;
+        flex-direction: row;
+        }
+        nav {
+            padding: 10px 0px;
+        }
+    }
+
+@media (max-width: 600px){
+        header{
+            display: flex;
+            flex-direction: row;        
+            }
+            nav {
+                padding: 10px 0px;
+            }
+            h1{
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+
+/**************/
+
+#menu{
+    display:none;    
+}
+@media only screen and (max-width: 600px){
+    header nav{
+        display: none;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+    #menu-check{
+        display: none;
+    }
+    #menu{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 3px;
+        display: block;
+        color: blue;
+        background-color: wheat;
+        font-size: 1.6em;
+        font-weight: bold;
+        border: 3px solid blue;
+        border-radius: 0.4em;
+        right: 0.5em;
+        top: 0px;
+        z-index: 5;
+        }
+     #menu:hover{
+            color: wheat;
+            background-color:blue;
+        }
+    #menu-cerrar{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    header nav{
+        height: 5em;
+        position: absolute;
+        top:5em;
+        right: 0px;
+        height: 100%;
+        background-color: rgba(255, 166, 0, 0.548);
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        opacity: 0.8;
+        color: wheat;
+        
+        }
+    header nav ul{
+        display: block;
+        text-align: right;
+        
+        }
+    header nav ul li:hover{
+        padding: 0.1em;
+        display: block;
+        text-align: right;
+        background-color: coral;
+        border-radius: 5em;
+    }
+ 
+}
+
+
+
+
