@@ -65,23 +65,8 @@ header a{
 header a:hover{color:wheat;}
 
 
-button{
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-    background-color: rgba(180, 109, 16, 0.89);
-    }
-button:hover{
-    background-color:rgba(158, 122, 74, 0.76);
-}
-.conteiner{
-    max-width: 1400px;
-    margin: auto;
-}
+/* --------------------HERO--------------------------------------- */
+
 #hero{
     display: flex;
     align-items: center;
@@ -106,23 +91,29 @@ button:hover{
 
 }
 
-#lugares{background-color: white;
-    color: black;
-  
-}
 
-#otrosdatos {background-color: white;
-    color: black;
-}
+/* --------------------LUGARES-------------------------------------- */
 
-#lugares .conteiner{
+#lugares{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+  }
+
+
+/* #lugares .conteiner{
     text-align: left;
-    padding: 50px 250px;
-
+    padding: 50px 250px; */
 }
+
 #lugares p{
     display: none;
 }
+
 #lugares h2{
     margin-top: 0;
     padding: 0px 0px 5px 0px;
@@ -133,15 +124,30 @@ button:hover{
     padding: 20px 0px 5px 0px;
 }
 
+/* --------------------GALERIA--------------------------------------- */
+
+
 #galeria {
     display: flex;
-    flex-direction: column;
-    min-height: 70px;
+    flex-direction: row;
+    min-height: 10px;
     background-color:orange;
     justify-content: space-between;
-    align-items: center;
-    padding: 300px 0px 0px 0px;
+    padding: 20px;
 }
+
+#galeria div{
+    float: left;
+    padding: 5px 5px 5px 5px;
+}
+
+.fotos img{
+    height: 180px;
+    align-items: center;
+    margin-right: 20px ;
+}
+
+/* --------------------OTROS DATOS--------------------------------------- */
 
 #otrosdatos {
 display: flex;
@@ -150,11 +156,16 @@ min-height: 70px;
 justify-content: space-between;
 align-items: center;
 padding: 15px;
+background-color: white;
+color: black
 }
 
 #otrosdatos .datos{
     padding: 50px 0px 0px 50px;
     }
+
+
+
 
 
 footer{
@@ -175,6 +186,10 @@ footer p{
     color: white;  
 }
  
+
+
+
+
 @media (min-width: 992px){
         header{
         display: flex;
