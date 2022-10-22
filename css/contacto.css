@@ -78,8 +78,10 @@ header ul a:hover{color:wheat;}
 
 form {
     background-image: url("img/bera.png") ;
-    background-size: 25%;
+    background-size: auto;
     }
+
+
 
 footer{
     background-color: rgba(0, 0, 0, 0.582);
