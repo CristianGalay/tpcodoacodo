@@ -8,7 +8,7 @@ html{
 }
 body{
     margin: 0;
-    background-color: gainsboro;
+    background-color: white;
     font-style: italic;
     font-family: 'Roboto', sans-serif;
     margin-top: 0px;
@@ -100,29 +100,30 @@ header a:hover{color:wheat;}
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-color: white;
+    background-color: white; 
     color: black;
   }
 
 
-/* #lugares .conteiner{
+#lugares .conteiner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: left;
-    padding: 50px 250px; */
+    padding: 2% 12%;
 }
 
 #lugares p{
-    display: none;
+    margin-top: 10px;
 }
 
 #lugares h2{
-    margin-top: 0;
-    padding: 0px 0px 5px 0px;
-}
+    margin-top: 5px;
+  }
 
 #lugares h3{
-    margin-top: 0;
-    padding: 20px 0px 5px 0px;
-}
+    margin-top: 15px;
+    }
 
 /* --------------------GALERIA--------------------------------------- */
 
@@ -130,32 +131,43 @@ header a:hover{color:wheat;}
 #galeria {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
     min-height: 10px;
     background-color:orange;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
 }
 
 #galeria div{
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    /* float: left; */
     padding: 5px 5px 5px 5px;
-}
+  }
 
 .fotos img{
     height: 180px;
     align-items: center;
     margin-right: 20px ;
-}
+    border: 1px solid white;
+    cursor: pointer;
+    
+    }
+
+.fotos img:hover{
+       transform: scale(1.3);
+             }
 
 /* --------------------OTROS DATOS--------------------------------------- */
 
 #otrosdatos {
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 min-height: 70px;
 justify-content: space-between;
 align-items: center;
-padding: 15px;
+padding: 5%;
 background-color: white;
 color: black
 }
@@ -163,8 +175,6 @@ color: black
 #otrosdatos .datos{
     padding: 50px 0px 0px 50px;
     }
-
-
 
 
 
