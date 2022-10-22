@@ -292,16 +292,29 @@ footer p{
         display: block;
     }
     header nav{
+        height: 5em;
         position: absolute;
-        top:0px;
+        top:5em;
         right: 0px;
         height: 100%;
-        background-color: orange;
+        background-color: rgba(255, 166, 0, 0.548);
         padding-top: 0.5em;
         padding-right: 1.5em;
         opacity: 0.8;
         color: wheat;
         
+        }
+    header nav ul{
+        display: block;
+        text-align: right;
+        
+        }
+    header nav ul li:hover{
+        padding: 0.1em;
+        display: block;
+        text-align: right;
+        background-color: coral;
+        border-radius: 5em;
     }
  
 }
