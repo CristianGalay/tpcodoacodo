@@ -39,21 +39,6 @@ header ul{
    padding: 1em;
 }
 
-#lugares .conteiner h1 h2 h3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0)), url("img/rio-hudson/hudson.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-}
 
 .logo{
     display: flex;
@@ -241,16 +226,6 @@ footer p{
         nav {
             padding: 10px 0px;
         }
-
-        /* #lugares .cartas{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            }
-        #lugares p{
-            display: block;
-            
-        } */
 
 
 /************/
