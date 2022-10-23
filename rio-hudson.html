@@ -16,7 +16,7 @@
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
 
     <title>Turismo Berazategui</title>
 
@@ -28,9 +28,7 @@
             text-align: center;
             flex-direction: column;
             height: 90vh;
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0),
-                    rgba(0, 0, 0, 0)), url("img/rio-hudson/hudson.jpg");
+            background-image: url("img/rio-hudson/hudson.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -45,12 +43,11 @@
     <header>
         <div class="conteiner">
             <div class="logo">
-                <img src="img/logo-berazategui.png" alt="logo de berazategui">
+                <img class="animate__animated animate__flip" src="img/logo-berazategui.png" alt="logo de berazategui">
                 <h1 class="truribera">Turismo Berazategui</h1>
             </div>
         </div>
-
-       <input type="checkbox" id="menu-check">
+            <input type="checkbox" id="menu-check">
             <label id="menu" for="menu-check">
                 <span id="menu-abrir">&#9776;</span>
                 <span id="menu-cerrar">X</span>
@@ -60,7 +57,7 @@
             <ul>
                 <li><a href="index.html ">Home</a></li>
                 <li><a href="historia.html">Historia</a></li>
-                <li><a href="index.html#lugares">Lugares</a></li>
+                <li><a href="#lugares">Lugares</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
