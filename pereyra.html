@@ -6,7 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/lugares.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
     <title>Turismo Berazategui</title>
+
     <style>
         #hero {
             display: flex;
@@ -15,9 +29,7 @@
             text-align: center;
             flex-direction: column;
             height: 90vh;
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0),
-                    rgba(0, 0, 0, 0)), url("img/pereyra/pereyra.jpg");
+            background-image: url("img/pereyra/pereyra.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -25,21 +37,30 @@
         }
     </style>
 
+
 </head>
 
 <body>
     <header>
         <div class="conteiner">
             <div class="logo">
-                <img src="img/logo-berazategui.png" alt="logo de berazategui">
+                <img class="animate__animated animate__flip" src="img/logo-berazategui.png" alt="logo de berazategui">
                 <h1 class="truribera">Turismo Berazategui</h1>
             </div>
         </div>
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+
         <nav>
-            <a href="index.html ">Home</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="#lugares">Lugares</a>
-            <a href="historia.html">Historia</a>
+            <ul>
+                <li><a href="index.html ">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="#lugares">Lugares</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -53,14 +74,36 @@
             <h2>Parque Pereyra Iraola</h2>
             <h3>Historia</h3>
             <p>
-            <p>Es un predio privilegiado como pocos, con una extensión de 10.248 hectáreas su superficie es compartida por cuatro Partidos de la Provincia, Berazategui, Florencio Varela, Ensenada y La Plata. </p>
-            <p>El proceso de consolidación del territorio tiene su inicio en el año 1580, con el reparto de tierras efectuado por don Juan de Garay, que desde Wilde a Magdalena entregó 30 propiedades denominadas “suertes de estancias”, todas sobre la costa del Río de la Plata. Una de estas fue entregada a don Antón de Higueras, que luego de algunas sucesiones pasó a ser propiedad de don Simón Pereyra, pasándose a llamar a partir de allí Estancia San Juan. En 1852 Leonardo Pereyra, hijo de Simón, emprende junto a su primo don Martín Iraola, un viaje cultural por Europa, trayendo nuevas ideas sobre parques y adelantos tecnológicos para el campo. Ambos proyectaron sobre sus propiedades parques, que hoy son públicos como el Paseo del Bosque de la Ciudad de La Plata y el Parque Provincial Pereyra Iraola. Como conclusión, pudieron comprobar que la forestación conserva el suelo, disminuyendo los efectos de la erosión, generando estos a su vez un microclima que beneficia la producción ganadera. Es así que en 1860 siembra el vivero de la Estancia San Juan. Para el año 1870 contaba con un monte de cuatro mil plantas.</p>
-            <p>El 7 de Enero del año 1948, el Presidente de la Nación Argentina don Juan Domingo Perón, expropia las estancias San Juan y Santa Rosa, pertenecientes a la familia Pereyra Iraola, para realizar una vasta obra cultural, social, científico y turística que incluyera institutos experimentales, laboratorios, viveros y parques zootécnicos, llamándolo Parque de la Ancianidad.</p>
-            <p>En virtud de contar con una amplia variedad de especies arbóreas fue declarado Reserva forestal (en algunos sectores) y Parque Natural por ley 7293/67 y Decreto Provincial N° 1465/49. Por su parte la UNESCO, lo declaró "reserva de biosfera", a pedido de la Secretaría de Ambiente de la Nación, a fin de preservar su biodiversidad ante el avance de las edificaciones en esa zona de la provincia de Buenos Aires</p>.
+            <p>Es un predio privilegiado como pocos, con una extensión de 10.248 hectáreas su superficie es compartida
+                por cuatro Partidos de la Provincia, Berazategui, Florencio Varela, Ensenada y La Plata. </p>
+            <p>El proceso de consolidación del territorio tiene su inicio en el año 1580, con el reparto de tierras
+                efectuado por don Juan de Garay, que desde Wilde a Magdalena entregó 30 propiedades denominadas “suertes
+                de estancias”, todas sobre la costa del Río de la Plata. Una de estas fue entregada a don Antón de
+                Higueras, que luego de algunas sucesiones pasó a ser propiedad de don Simón Pereyra, pasándose a llamar
+                a partir de allí Estancia San Juan. En 1852 Leonardo Pereyra, hijo de Simón, emprende junto a su primo
+                don Martín Iraola, un viaje cultural por Europa, trayendo nuevas ideas sobre parques y adelantos
+                tecnológicos para el campo. Ambos proyectaron sobre sus propiedades parques, que hoy son públicos como
+                el Paseo del Bosque de la Ciudad de La Plata y el Parque Provincial Pereyra Iraola. Como conclusión,
+                pudieron comprobar que la forestación conserva el suelo, disminuyendo los efectos de la erosión,
+                generando estos a su vez un microclima que beneficia la producción ganadera. Es así que en 1860 siembra
+                el vivero de la Estancia San Juan. Para el año 1870 contaba con un monte de cuatro mil plantas.</p>
+            <p>El 7 de Enero del año 1948, el Presidente de la Nación Argentina don Juan Domingo Perón, expropia las
+                estancias San Juan y Santa Rosa, pertenecientes a la familia Pereyra Iraola, para realizar una vasta
+                obra cultural, social, científico y turística que incluyera institutos experimentales, laboratorios,
+                viveros y parques zootécnicos, llamándolo Parque de la Ancianidad.</p>
+            <p>En virtud de contar con una amplia variedad de especies arbóreas fue declarado Reserva forestal (en
+                algunos sectores) y Parque Natural por ley 7293/67 y Decreto Provincial N° 1465/49. Por su parte la
+                UNESCO, lo declaró "reserva de biosfera", a pedido de la Secretaría de Ambiente de la Nación, a fin de
+                preservar su biodiversidad ante el avance de las edificaciones en esa zona de la provincia de Buenos
+                Aires</p>.
             </p>
             <h3>Actividades de Interés</h3>
             <p>
-            Recorrer este importante pulmón verde de la Provincia de Buenos Aires, donde se encontrará con atractivos turísticos, ecológicos, recreativos, culturales y sociales, con posibilidades de realizar cabalgatas, avistaje de aves, caminatas, senderismo, ciclismo, etc. Cuenta con servicio permanente de guardaparques, quienes realizan tareas de orientación al visitante y vigilancia de flora y fauna. Tiene zonas abiertas al público y zonas restringidas para preservar flora y fauna.
+                Recorrer este importante pulmón verde de la Provincia de Buenos Aires, donde se encontrará con
+                atractivos turísticos, ecológicos, recreativos, culturales y sociales, con posibilidades de realizar
+                cabalgatas, avistaje de aves, caminatas, senderismo, ciclismo, etc. Cuenta con servicio permanente de
+                guardaparques, quienes realizan tareas de orientación al visitante y vigilancia de flora y fauna. Tiene
+                zonas abiertas al público y zonas restringidas para preservar flora y fauna.
             </p>
     </section>
 
