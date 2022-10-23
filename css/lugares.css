@@ -10,7 +10,7 @@ body{
     margin: 0;
     background-color: white;
     font-style: italic;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Caveat', cursive;
     margin-top: 0px;
 }
 
@@ -22,7 +22,6 @@ ul{list-style: none;}
 li{font-size: 1.5em;}
 
 header{
-    font-family: 'Caveat', cursive;
     display: flex;
     flex-direction: column;
     min-height: 70px;
@@ -46,6 +45,7 @@ header{
     background-position: center center;
     height: 300px;
 }
+
 
 .logo{
     display: flex;
@@ -72,13 +72,34 @@ header .conteiner{
     align-items: center;
 }
 
-header a{
+header ul a{
     text-decoration: none;
     font-weight: bold;
     padding-right: 10px;
     color: black;}
 
-header a:hover{color:wheat;}
+header ul a:hover{color:wheat;}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgba(180, 109, 16, 0.89);
+    }
+
+button:hover{
+    background-color:rgba(158, 122, 74, 0.76);
+}
+
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+}
 
 
 /* --------------------LUGARES-------------------------------------- */
@@ -214,92 +235,15 @@ footer p{
             padding: 10px 0px;
         }
 
-        /* #lugares .cartas{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            }
-        #lugares p{
-            display: block;
-            
-        } */
-
-#menu{
-    display:none;    
-}
-@media only screen and (max-width: 600px){
-    header nav{
-        display: none;
-    }
-    #menu-check:not(:checked) ~ nav{
-        display: none;
-    }
-    #menu-check:checked ~ nav{
-        display: block;
-    }
-    #menu-check{
-        display: none;
-    }
-    #menu{
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 3px;
-        display: block;
-        color: blue;
-        background-color: wheat;
-        font-size: 1.6em;
-        font-weight: bold;
-        border: 3px solid blue;
-        border-radius: 0.4em;
-        right: 0.5em;
-        top: 0px;
-        z-index: 5;
-        }
-     #menu:hover{
-            color: wheat;
-            background-color:blue;
-        }
-    #menu-cerrar{
-        display: none;
-    }
-    #menu-check:checked ~ label #menu-abrir{
-        display: none;
-    }
-    #menu-check:checked ~ label #menu-cerrar{
-        display: block;
-    }
-    header nav{
-        height: 5em;
-        position: absolute;
-        top:5em;
-        right: 0px;
-        height: 100%;
-        background-color: rgba(255, 166, 0, 0.548);
-        padding-top: 0.5em;
-        padding-right: 1.5em;
-        opacity: 0.8;
-        color: wheat;
         
-        }
-    header nav ul{
-        display: block;
-        text-align: right;
-        
-        }
-    header nav ul li:hover{
-        padding: 0.1em;
-        display: block;
-        text-align: right;
-        background-color: coral;
-        border-radius: 5em;
-    }
-}
-#menu{
-    display:none;    
-}
 /************/
 
-@media only screen and (max-width: 600px){
+#menu{
+    display:none;    
+}
+@media only screen and (max-width: 600px)
+
+{
     header nav{
         display: none;
     }
@@ -365,5 +309,4 @@ footer p{
         background-color: coral;
         border-radius: 5em;
     }
-}
 }

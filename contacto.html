@@ -40,35 +40,70 @@
         <ul>
             <li><a href="index.html ">Home</a></li>
             <li><a href="historia.html">Historia</a></li>
-            <li><a href="#lugares">Lugares</a></li>
+            <li><a href="index.html#lugares">Lugares</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     </header>
 
 
-<form action="">
+<form action="" name="formulario" method="get">
     <div class="conteiner text-center"><br>
-      <H5>Dejanos tu consulta y/o comentario</H5><br>
+      <h4>Dejanos tu consulta y/o comentario</h4><br>
     
             <div class="conteiner-formulario">
                 <div class="conteiner text-center">
-                    <input type="text" name="nombre" size="40" maxlength="40" placeholder="Nombre">
-                    <input type="text" name="apellido" size="40" maxlength="40" placeholder="Apellido">
+                    <input type="text" id="nombre" name="nombre" size="40" maxlength="40" placeholder="Nombre:">
+                    <input type="text" id="apellido" name="apellido" size="40" maxlength="40" placeholder="Apellido:">
                     <br><br>
-                    <input type="email" name="correo" size="87" maxlength="50" placeholder="Email">
+                    <input type="email" id="mail" name="mail" size="87" maxlength="50" placeholder="Email:">
                     <br><br>
                     <textarea name="consulta" id="" cols="90" rows="10" placeholder="Dejanos tu consulta y/o comentario"></textarea>
                     <br><br>
                 </div>   
             </div>                      
             <div class="btn-group gap-2 text-center">
-                <input type="reset" value="Borrar todo">
-                <input type="submit" value="Enviar Formulario">
-          </div> <br><br>
+                <input type="reset"  id="reset"  name="borrar" value="Borrar todo">
+                <input type="submit" id="enviar" name="enviar" value="Enviar Formulario">
+            </div> <br><br>
         </div>
 </form>
+<script>
+    (function(){
+            
+            var formulario = document.getElementsByName('formulario')[0],
+                elementos = formulario.elements,
+                boton = document.getElementById('enviar');
+            
+            var validarNombre = function(e){
+                if (formulario.nombre.value == 0){
+                    alert("Completa el campo Nombre");
+                    e.preventDefault();
+                }
+            };   
 
+            var validarApellido = function(e){
+                if (formulario.apellido.value == 0){
+                    alert("Completa el campo Apellido");
+                    e.preventDefault();
+                }
+            };
+            
+            var validarMail = function(e){
+                if (formulario.mail.value == 0){
+                    alert("Completa el campo Email");
+                    e.preventDefault();        
+                }
+            };
+
+            var validar = function(e){
+                validarNombre(e);
+                validarApellido(e);
+                validarMail(e);
+            };
+            formulario.addEventListener("submit", validar);
+        }())
+</script>
 
 
     <footer>
