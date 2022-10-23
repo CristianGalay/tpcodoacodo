@@ -32,7 +32,6 @@ header{
     padding: 15px;
 }
 #lugares .conteiner h1 h2 h3{
-    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,6 +84,7 @@ header a:hover{color:wheat;}
 /* --------------------LUGARES-------------------------------------- */
 
 #lugares{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
