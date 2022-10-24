@@ -17,7 +17,7 @@ body{
 h1{color:rgb(0, 21, 141);}
 h2{font-size: 2.7em;}
 h3{font-size: 2em;}
-p{font-size: 1.25em;}
+p{font-size: 1.5em;}
 ul{list-style: none;}
 li{font-size: 1.5em;}
 
@@ -197,7 +197,6 @@ footer p{
 
     }
     
-
 
 #menu{
     display:none;    
