@@ -59,7 +59,7 @@
                     <br><br>
                     <input type="email" id="mail" name="mail" size="87" maxlength="50" placeholder="Email:">
                     <br><br>
-                    <textarea name="consulta" id="" cols="90" rows="10" placeholder="Dejanos tu consulta y/o comentario"></textarea>
+                    <textarea name="consulta" id="consulta" cols="90" rows="10" placeholder="Dejanos tu consulta y/o comentario"></textarea>
                     <br><br>
                 </div>   
             </div>                      
@@ -77,21 +77,28 @@
             
             var validarNombre = function(e){
                 if (formulario.nombre.value == 0){
-                    alert("Completa el campo Nombre");
+                    alert("Completa por favor el campo Nombre");
                     e.preventDefault();
                 }
             };   
 
             var validarApellido = function(e){
                 if (formulario.apellido.value == 0){
-                    alert("Completa el campo Apellido");
+                    alert("Completa por favor el campo Apellido");
                     e.preventDefault();
                 }
             };
             
             var validarMail = function(e){
                 if (formulario.mail.value == 0){
-                    alert("Completa el campo Email");
+                    alert("Completa por favor el campo Email");
+                    e.preventDefault();        
+                }
+            };
+
+            var validarConsulta = function(e){
+                if (formulario.consulta.value == 0){
+                    alert("Completa por favor tu comentario y/o consulta");
                     e.preventDefault();        
                 }
             };
@@ -100,6 +107,7 @@
                 validarNombre(e);
                 validarApellido(e);
                 validarMail(e);
+                validarConsulta(e);
             };
             formulario.addEventListener("submit", validar);
         }())
