@@ -197,8 +197,6 @@ footer p{
         nav {
             padding: 10px 0px;
         }
-
-
     }
     
 
@@ -210,10 +208,10 @@ footer p{
     header{
         display: flex;
         flex-direction: row;        
-        }
-        nav {
-            padding: 10px 0px;
-        }
+    }
+    nav {
+        padding: 10px 0px;
+    }
 
     header nav{
         display: none;
@@ -266,12 +264,10 @@ footer p{
         padding-right: 1.5em;
         opacity: 0.8;
         color: wheat;
-        
-        }
+    }
     header nav ul{
         display: block;
         text-align: right;
-        
         }
     header nav ul li:hover{
         padding: 0.1em;
