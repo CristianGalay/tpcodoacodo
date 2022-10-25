@@ -188,6 +188,9 @@ footer p{
     color: white;  
 }
 
+#menu-check{
+    display: none;
+}
  
 @media (min-width: 992px){
         header{
