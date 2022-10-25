@@ -19,7 +19,7 @@ h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{list-style: none;}
 li{font-size: 1.5em;}
-h4{color: whitesmoke;}
+h3{color: whitesmoke;}
 
 header{
     display: flex;
@@ -79,11 +79,17 @@ header ul a:hover{color:wheat;}
 form {
     background-image: url("img/bera.png") ;
     background-size: auto;
+    text-align: center;
+   }
     
-    }
 .boton{
-background-color: orange;
-}
+    background-color: orange;
+    color: wheat;    
+    border-radius: 25px;    
+    font-family:'Caveat', cursive;
+    font-size: 25px;
+    border-color: orange;
+    }
 
 footer{
     background-color: rgba(0, 0, 0, 0.582);
