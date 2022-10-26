@@ -88,7 +88,7 @@ header ul a:hover{color:wheat;}
 
 }
 #historia p{
-    display: none;
+    display: block;
 }
 #historia h2{
     margin-top: 0;
@@ -187,10 +187,13 @@ footer p{
             flex-direction: row;
             justify-content: center;
             }
-        #historia p{
-            display: block;
-            
-        }
+            header ul{
+                display: flex;
+                place-content: space-between;
+                list-style-type: none;
+                margin: 0;
+                padding: 1em;
+             }
     }
 
     /**************/
