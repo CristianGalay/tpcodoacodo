@@ -95,7 +95,6 @@ header ul a:hover{color:wheat;}
 /* --------------------LUGARES-------------------------------------- */
 
 #lugares{
-    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +114,7 @@ header ul a:hover{color:wheat;}
 }
 
 #lugares p{
+    font-family: 'Roboto', sans-serif;
     margin-top: 10px;
 }
 
