@@ -175,10 +175,10 @@ button:hover{
 }
 #socialmidia {
     color: whitesmoke;
-  min-height: 30vh;
-  display: flex;
+    min-height: 15vh;
+    display: flex;
     justify-content: center;
-  align-items: center;
+    align-items: center;
 }
 
 
