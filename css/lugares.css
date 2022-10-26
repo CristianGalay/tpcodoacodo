@@ -30,6 +30,13 @@ header{
     align-items: center;
     padding: 15px;
 }
+header ul{
+    display: flex;
+    place-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+ }
 #lugares .conteiner h1 h2 h3{
     display: flex;
     align-items: center;
