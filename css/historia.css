@@ -88,6 +88,8 @@ header ul a:hover{color:wheat;}
 
 }
 #historia p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
     display: none;
 }
 #historia h2{
@@ -110,8 +112,8 @@ header ul a:hover{color:wheat;}
 }
 .carta:first-child{
     background-image:  linear-gradient(0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
     )
     ,url(img/hudson.jpg);
 
