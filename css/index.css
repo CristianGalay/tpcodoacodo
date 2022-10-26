@@ -113,7 +113,7 @@ button:hover{
 }
 #quevisitar{
     text-align: center;
-    padding: 100px 12px;
+    padding: 70px 12px;
 }
 #quevisitar p{
     padding: 0px 0px 50px 0px;
@@ -173,14 +173,45 @@ button:hover{
     ,url(img/vicenzo.jpg);
 
 }
-#telefonos .conteiner{
+#socialmidia {
+    color: whitesmoke;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.redes {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.redes a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
-    padding: 100px;
-}
-#telefonos li{
-    margin: 12px;
-    font-weight: bold;
-}
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+.redes a:hover {
+    transform: scale(1.2);
+  }
+
+
+
+
+
+
+
 
 footer{
     background-color: rgba(0, 0, 0, 0.582);
