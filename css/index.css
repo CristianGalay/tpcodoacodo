@@ -177,17 +177,15 @@ button:hover{
     color: whitesmoke;
   min-height: 30vh;
   display: flex;
-  justify-content: center;
+    justify-content: center;
   align-items: center;
 }
 
 
 .redes {
-    min-width: 700px;
+    min-width: 400px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-between;
   }
   
 .redes a {
