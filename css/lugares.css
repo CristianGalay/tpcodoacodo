@@ -115,7 +115,8 @@ header ul a:hover{color:wheat;}
 
 #lugares p{
     font-family: 'Roboto', sans-serif;
-    font-size: 23px;
+    font-size: 22px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
