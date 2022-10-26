@@ -88,8 +88,6 @@ header ul a:hover{color:wheat;}
 
 }
 #historia p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 23px;
     display: none;
 }
 #historia h2{
@@ -188,10 +186,13 @@ footer p{
             flex-direction: row;
             justify-content: center;
             }
-        #historia p{
-            display: block;
-            
-        }
+            header ul{
+                display: flex;
+                place-content: space-between;
+                list-style-type: none;
+                margin: 0;
+                padding: 1em;
+             }
     }
 
     /**************/
