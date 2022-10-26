@@ -88,7 +88,9 @@ header ul a:hover{color:wheat;}
 
 }
 #historia p{
-    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    margin-top: 10px;
 }
 #historia h2{
     margin-top: 0;
