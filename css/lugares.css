@@ -295,5 +295,7 @@ footer p{
         background-color: coral;
         border-radius: 5em;
     }
-
+    #otrosdatos {
+        padding: 5px, 15px,5px,15px;
+        }
 }
