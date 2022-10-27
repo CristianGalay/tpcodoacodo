@@ -208,6 +208,10 @@ footer p{
     display:none;    
 }
 @media only screen and (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row; 
+    }
     header nav{
         display: none;
     }
@@ -235,7 +239,7 @@ footer p{
         top: 0px;
         z-index: 5;
         }
-     #menu:hover{
+    #menu:hover{
             color: wheat;
             background-color:blue;
         }
@@ -274,6 +278,7 @@ footer p{
     @media only screen and (max-width: 600px){
         header nav{
             display: none;
+            
         }
         #menu-check:not(:checked) ~ nav{
             display: none;
