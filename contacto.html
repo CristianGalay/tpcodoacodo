@@ -65,7 +65,7 @@
 </form>
 <script>
     (function(){
-            
+                
             var formulario = document.getElementsByName('formulario')[0],
                 elementos = formulario.elements,
                 boton = document.getElementById('enviar');
@@ -104,15 +104,33 @@
                 validarMail(e);
                 validarConsulta(e);
             };
-            formulario.addEventListener("submit", validar);
-            formulario.reset();
-        }())
-</script>
 
+            formulario.addEventListener("submit", validar);
+            const $form =document.querySelector('#formulario')
+
+            $form.addEventListener('submit', handlesubmit)
+
+            async function handlesubmit(event) {
+                event.preventDefault()
+                const form = new FormData(this)
+                const response = await fetch(this.action, {
+                    method: this.method,
+                    body: form, 
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                if (response.ok){
+                    this.reset()
+                    alert('Gracias por contactarte con nosotros')
+                }
+                }            
+    }())
+    </script>
 <footer>
         <div class="conteiner">
             <p>&copy; - 2022 - Turismo Berazategui</p>
         </div>
     </footer>
-</body>
+    </body>
 </html>
