@@ -208,8 +208,13 @@ footer p{
     display:none;    
 }
 @media only screen and (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row; 
+    }
     header nav{
         display: none;
+               
     }
     #menu-check:not(:checked) ~ nav{
         display: none;
@@ -221,6 +226,7 @@ footer p{
         display: none;
     }
     #menu{
+        
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 3px;
@@ -234,7 +240,8 @@ footer p{
         right: 0.5em;
         top: 0px;
         z-index: 5;
-        }
+        
+    }
      #menu:hover{
             color: wheat;
             background-color:blue;
@@ -258,7 +265,7 @@ footer p{
         padding-top: 0.5em;
         padding-right: 1.5em;
         opacity: 0.8;
-        color: wheat;
+        color: black;
         
         }
     header nav ul{
@@ -266,11 +273,22 @@ footer p{
         text-align: right;
         
         }
+        header nav ul li:hover{
+            padding: 0.1em;
+            display: block;
+            text-align: right;
+            background-color: coral;
+            border-radius: 5em;
+        }
+      
     }
+
+    /**********/
+
     #menu{
         display:none;    
     }
-    /**********/
+   
     @media only screen and (max-width: 600px){
         header nav{
             display: none;
